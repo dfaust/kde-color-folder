@@ -1,3 +1,5 @@
 # Color Folder
 
-In order to install, make sure the file 'install.sh' is executeable and run it.
+A KDE service menu for changing the color of specific folders, compatible with KDE4 and Plasma 5.
+
+Install using the Dolphin configuration dialog or by running the install.sh file.
