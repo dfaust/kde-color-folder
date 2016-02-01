@@ -1,3 +1,6 @@
+2.0.0:
+Add: Plasma 5 compatibility
+
 1.0.2:
 Fix: Installation if user is already root or kdesu is not installed (Thx Jonathan Kolberg)
 
