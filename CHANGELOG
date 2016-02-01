@@ -1,0 +1,37 @@
+1.0.2:
+Fix: Installation if user is already root or kdesu is not installed (Thx Jonathan Kolberg)
+
+1.0.1:
+Add: Serbian translation (by Mladen Pejaković)
+Add: Option to install as top level action
+Fix: Create ServiceMenus directory if needed when installing
+Fix: Run kbuildsycoca4 after installing
+
+1.0.0:
+Updated to oxygen icon set
+Dropped all other icon sets
+Added install and uninstall scripts
+Special characters seem to work properly now
+
+0.3.4:
+Add: Translations: Slovak and Czech (Thx Jozef)
+Fix: Russian translation
+
+0.3.3:
+Add: Translations: Russian (Thx Alex)
+
+0.3.2:
+Add: nuoveXT version
+
+0.3.1:
+Add: Translations: Italian (Thx Marco)
+
+0.3:
+Fix: Folders with spaces in name are now supported. Other Characters like " and ' are still unsupported!
+
+0.2:
+Add: Translations: Spanish and Catalan (Thx Miguel Angel, I guess), Polish (Thx Jakub Stachowski), France and Hungarian
+Add: An extra version for the crystal icon set
+
+0.1:
+Initial release

@@ -1,0 +1,222 @@
+[Desktop Entry]
+Type=Service
+Encoding=UTF-8
+Version=1.0.1
+ServiceTypes=KonqPopupMenu/Plugin,inode/directory
+Actions=ColorBlue;ColorBrown;ColorGreen;ColorGrey;ColorOrange;ColorCyan;ColorRed;ColorViolet;ColorYellow;RemoveColor;RemoveDesktopFile;
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=Tint
+X-KDE-Submenu[de]=Einfärben
+X-KDE-Submenu[ca]=Color
+X-KDE-Submenu[es]=Color
+X-KDE-Submenu[pl]=Koloruj
+X-KDE-Submenu[hu]=Színez
+X-KDE-Submenu[fr]=Colorer
+X-KDE-Submenu[it]=Colore
+X-KDE-Submenu[ru]=Цвет
+X-KDE-Submenu[sk]=Zafarbiť
+X-KDE-Submenu[cs]=Zabarvit
+X-KDE-Submenu[sr]=Боја
+X-KDE-Submenu[sr@latin]=Boja
+X-KDE-Submenu[sr@ijekavian]=Боја
+X-KDE-Submenu[sr@ijekavianlatin]=Boja
+
+[Desktop Action ColorBlue]
+Name=Blue
+Name[de]=Blau
+Name[ca]=Blau
+Name[es]=Azul
+Name[pl]=Niebieski
+Name[hu]=Kék
+Name[fr]=Bleu
+Name[it]=Blu
+Name[ru]=Синий
+Name[sk]=Modrá
+Name[cs]=Modrá
+Name[sr]=Плава
+Name[sr@latin]=Plava
+Name[sr@ijekavian]=Плава
+Name[sr@ijekavianlatin]=Plava
+Icon=folder-blue
+Exec=colorfolder folder-blue %F/.directory
+
+[Desktop Action ColorBrown]
+Name=Brown
+Name[de]=Braun
+Name[sr]=Смеђа
+Name[sr@latin]=Smeđa
+Name[sr@ijekavian]=Смеђа
+Name[sr@ijekavianlatin]=Smeđa
+Icon=folder-brown
+Exec=colorfolder folder-brown %F/.directory
+
+[Desktop Action ColorCyan]
+Name=Cyan
+Name[de]=Cyan
+Name[ca]=Cian
+Name[es]=Cian
+Name[pl]=Błękitny
+Name[hu]=Cián
+Name[fr]=Cyan
+Name[ru]=Голубой
+Name[sk]=Modrozelená
+Name[cs]=Modrozelená
+Name[sr]=Цијан
+Name[sr@latin]=Cijan
+Name[sr@ijekavian]=Цијан
+Name[sr@ijekavianlatin]=Cijan
+Icon=folder-cyan
+Exec=colorfolder folder-cyan %F/.directory
+
+[Desktop Action ColorGreen]
+Name=Green
+Name[de]=Grün
+Name[ca]=Verd
+Name[es]=Verde
+Name[pl]=Zielony
+Name[hu]=Zöld
+Name[fr]=Vert
+Name[it]=Verde
+Name[ru]=Зеленый
+Name[sk]=Zelená
+Name[cs]=Zelená
+Name[sr]=Зелена
+Name[sr@latin]=Zelena
+Name[sr@ijekavian]=Зелена
+Name[sr@ijekavianlatin]=Zelena
+Icon=folder-green
+Exec=colorfolder folder-green %F/.directory
+
+[Desktop Action ColorGrey]
+Name=Grey
+Name[de]=Grau
+Name[ca]=Gris
+Name[es]=Gris
+Name[pl]=Szary
+Name[hu]=Szürke
+Name[fr]=Gris
+Name[it]=Grigio
+Name[ru]=Серый
+Name[sk]=Šedá
+Name[cs]=Šedá
+Name[sr]=Сива
+Name[sr@latin]=Siva
+Name[sr@ijekavian]=Сива
+Name[sr@ijekavianlatin]=Siva
+Icon=folder-grey
+Exec=colorfolder folder-grey %F/.directory
+
+[Desktop Action ColorOrange]
+Name=Orange
+Name[de]=Orange
+Name[ca]=Taronja
+Name[es]=Naranja
+Name[pl]=Pomarańczowy
+Name[hu]=Naranzsszinű
+Name[fr]=Orange
+Name[it]=Arancione
+Name[ru]=Оранжевый
+Name[sk]=Oranžová
+Name[cs]=Oranžová
+Name[sr]=Наранџаста
+Name[sr@latin]=Narandžasta
+Name[sr@ijekavian]=Наранџаста
+Name[sr@ijekavianlatin]=Narandžasta
+Icon=folder-orange
+Exec=colorfolder folder-orange %F/.directory
+
+[Desktop Action ColorRed]
+Name=Red
+Name[de]=Rot
+Name[ca]=Vermell
+Name[es]=Rojo
+Name[pl]=Czerwony
+Name[hu]=Piros
+Name[fr]=Rouge
+Name[it]=Rosso
+Name[ru]=Красный
+Name[sk]=Červená
+Name[cs]=Červená
+Name[sr]=Црвена
+Name[sr@latin]=Crvena
+Name[sr@ijekavian]=Црвена
+Name[sr@ijekavianlatin]=Crvena
+Icon=folder-red
+Exec=colorfolder folder-red %F/.directory
+
+[Desktop Action ColorViolet]
+Name=Violet
+Name[de]=Violett
+Name[ca]=Violeta
+Name[es]=Violeta
+Name[pl]=Fioletowy
+Name[hu]=Lila
+Name[fr]=Violet
+Name[it]=Viola
+Name[ru]=Фиолетовый
+Name[sk]=Fialová
+Name[cs]=Fialová
+Name[sr]=Љубичаста
+Name[sr@latin]=Ljubičasta
+Name[sr@ijekavian]=Љубичаста
+Name[sr@ijekavianlatin]=Ljubičasta
+Icon=folder-violet
+Exec=colorfolder folder-violet %F/.directory
+
+[Desktop Action ColorYellow]
+Name=Yellow
+Name[de]=Gelb
+Name[ca]=Groc
+Name[es]=Amarillo
+Name[pl]=Żółty
+Name[hu]=Sárga
+Name[fr]=Jaune
+Name[it]=Giallo
+Name[ru]=Желтый
+Name[sk]=Žltá
+Name[cs]=Žlutá
+Name[sr]=Жута
+Name[sr@latin]=Žuta
+Name[sr@ijekavian]=Жута
+Name[sr@ijekavianlatin]=Žuta
+Icon=folder-yellow
+Exec=colorfolder folder-yellow %F/.directory
+
+[Desktop Action RemoveColor]
+Name=Remove color
+Name[de]=Farbe entfernen
+Name[ca]=Llevar color
+Name[es]=Quitar color
+Name[pl]=Usuń kolor
+Name[hu]=Eltávolít színt
+Name[fr]=Décolorer
+Name[it]=Rimuovi colore
+Name[ru]=Удалить цвет
+Name[sk]=Odfarbiť
+Name[cs]=Odbarvit
+Name[sr]=Уклони боју
+Name[sr@latin]=Ukloni boju
+Name[sr@ijekavian]=Уклони боју
+Name[sr@ijekavianlatin]=Ukloni boju
+Icon=folder
+Exec=colorfolder remove %F/.directory
+
+[Desktop Action RemoveDesktopFile]
+Name=Remove .directory file
+Name[de]=Lösche die .directory Datei
+Name[ca]=Llevar fitxer .directory
+Name[es]=Quitar fichero .directory
+Name[pl]=Usuń plik .directory
+Name[hu]=Kitöröl a .directory fájlt
+Name[fr]=Effacer le .directory fichier
+Name[it]=Rimuovi il file .directory
+Name[ru]=Удалить файл .directory
+Name[sk]=Odstrániť súbor .directory
+Name[cs]=Odstraniť soubor .directory
+Name[sr]=Уклони .directory фајл
+Name[sr@latin]=Ukloni .directory fajl
+Name[sr@ijekavian]=Уклони .directory фајл
+Name[sr@ijekavianlatin]=Ukloni .directory fajl
+Icon=edit-delete
+Exec=rm %F/.directory
+
