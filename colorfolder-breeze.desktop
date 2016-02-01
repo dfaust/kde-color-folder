@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=Service
 Encoding=UTF-8
-Version=1.0.1
+Version=2.0.0
 ServiceTypes=KonqPopupMenu/Plugin,inode/directory
-Actions=ColorBlue;ColorBrown;ColorGreen;ColorGrey;ColorOrange;ColorCyan;ColorRed;ColorViolet;ColorYellow;RemoveColor;RemoveDesktopFile;
+Actions=ColorRed;ColorOrange;ColorYellow;ColorGreen;ColorBlue;ColorViolet;ColorMagenta;ColorBrown;ColorCyan;ColorGrey;ColorBlack;RemoveColor;RemoveDesktopFile;
 X-KDE-Submenu=Tint
 X-KDE-Submenu[de]=Einfärben
 X-KDE-Submenu[ca]=Color
@@ -19,110 +19,6 @@ X-KDE-Submenu[sr]=Боја
 X-KDE-Submenu[sr@latin]=Boja
 X-KDE-Submenu[sr@ijekavian]=Боја
 X-KDE-Submenu[sr@ijekavianlatin]=Boja
-
-[Desktop Action ColorBlue]
-Name=Blue
-Name[de]=Blau
-Name[ca]=Blau
-Name[es]=Azul
-Name[pl]=Niebieski
-Name[hu]=Kék
-Name[fr]=Bleu
-Name[it]=Blu
-Name[ru]=Синий
-Name[sk]=Modrá
-Name[cs]=Modrá
-Name[sr]=Плава
-Name[sr@latin]=Plava
-Name[sr@ijekavian]=Плава
-Name[sr@ijekavianlatin]=Plava
-Icon=folder-blue
-Exec=colorfolder folder-blue %F/.directory
-
-[Desktop Action ColorBrown]
-Name=Brown
-Name[de]=Braun
-Name[sr]=Смеђа
-Name[sr@latin]=Smeđa
-Name[sr@ijekavian]=Смеђа
-Name[sr@ijekavianlatin]=Smeđa
-Icon=folder-brown
-Exec=colorfolder folder-brown %F/.directory
-
-[Desktop Action ColorCyan]
-Name=Cyan
-Name[de]=Cyan
-Name[ca]=Cian
-Name[es]=Cian
-Name[pl]=Błękitny
-Name[hu]=Cián
-Name[fr]=Cyan
-Name[ru]=Голубой
-Name[sk]=Modrozelená
-Name[cs]=Modrozelená
-Name[sr]=Цијан
-Name[sr@latin]=Cijan
-Name[sr@ijekavian]=Цијан
-Name[sr@ijekavianlatin]=Cijan
-Icon=folder-cyan
-Exec=colorfolder folder-cyan %F/.directory
-
-[Desktop Action ColorGreen]
-Name=Green
-Name[de]=Grün
-Name[ca]=Verd
-Name[es]=Verde
-Name[pl]=Zielony
-Name[hu]=Zöld
-Name[fr]=Vert
-Name[it]=Verde
-Name[ru]=Зеленый
-Name[sk]=Zelená
-Name[cs]=Zelená
-Name[sr]=Зелена
-Name[sr@latin]=Zelena
-Name[sr@ijekavian]=Зелена
-Name[sr@ijekavianlatin]=Zelena
-Icon=folder-green
-Exec=colorfolder folder-green %F/.directory
-
-[Desktop Action ColorGrey]
-Name=Grey
-Name[de]=Grau
-Name[ca]=Gris
-Name[es]=Gris
-Name[pl]=Szary
-Name[hu]=Szürke
-Name[fr]=Gris
-Name[it]=Grigio
-Name[ru]=Серый
-Name[sk]=Šedá
-Name[cs]=Šedá
-Name[sr]=Сива
-Name[sr@latin]=Siva
-Name[sr@ijekavian]=Сива
-Name[sr@ijekavianlatin]=Siva
-Icon=folder-grey
-Exec=colorfolder folder-grey %F/.directory
-
-[Desktop Action ColorOrange]
-Name=Orange
-Name[de]=Orange
-Name[ca]=Taronja
-Name[es]=Naranja
-Name[pl]=Pomarańczowy
-Name[hu]=Naranzsszinű
-Name[fr]=Orange
-Name[it]=Arancione
-Name[ru]=Оранжевый
-Name[sk]=Oranžová
-Name[cs]=Oranžová
-Name[sr]=Наранџаста
-Name[sr@latin]=Narandžasta
-Name[sr@ijekavian]=Наранџаста
-Name[sr@ijekavianlatin]=Narandžasta
-Icon=folder-orange
-Exec=colorfolder folder-orange %F/.directory
 
 [Desktop Action ColorRed]
 Name=Red
@@ -141,26 +37,26 @@ Name[sr@latin]=Crvena
 Name[sr@ijekavian]=Црвена
 Name[sr@ijekavianlatin]=Crvena
 Icon=folder-red
-Exec=colorfolder folder-red %F/.directory
+Exec=colorfolder.sh folder-red %F/.directory
 
-[Desktop Action ColorViolet]
-Name=Violet
-Name[de]=Violett
-Name[ca]=Violeta
-Name[es]=Violeta
-Name[pl]=Fioletowy
-Name[hu]=Lila
-Name[fr]=Violet
-Name[it]=Viola
-Name[ru]=Фиолетовый
-Name[sk]=Fialová
-Name[cs]=Fialová
-Name[sr]=Љубичаста
-Name[sr@latin]=Ljubičasta
-Name[sr@ijekavian]=Љубичаста
-Name[sr@ijekavianlatin]=Ljubičasta
-Icon=folder-violet
-Exec=colorfolder folder-violet %F/.directory
+[Desktop Action ColorOrange]
+Name=Orange
+Name[de]=Orange
+Name[ca]=Taronja
+Name[es]=Naranja
+Name[pl]=Pomarańczowy
+Name[hu]=Naranzsszinű
+Name[fr]=Orange
+Name[it]=Arancione
+Name[ru]=Оранжевый
+Name[sk]=Oranžová
+Name[cs]=Oranžová
+Name[sr]=Наранџаста
+Name[sr@latin]=Narandžasta
+Name[sr@ijekavian]=Наранџаста
+Name[sr@ijekavianlatin]=Narandžasta
+Icon=folder-orange
+Exec=colorfolder.sh folder-orange %F/.directory
 
 [Desktop Action ColorYellow]
 Name=Yellow
@@ -179,7 +75,123 @@ Name[sr@latin]=Žuta
 Name[sr@ijekavian]=Жута
 Name[sr@ijekavianlatin]=Žuta
 Icon=folder-yellow
-Exec=colorfolder folder-yellow %F/.directory
+Exec=colorfolder.sh folder-yellow %F/.directory
+
+[Desktop Action ColorGreen]
+Name=Green
+Name[de]=Grün
+Name[ca]=Verd
+Name[es]=Verde
+Name[pl]=Zielony
+Name[hu]=Zöld
+Name[fr]=Vert
+Name[it]=Verde
+Name[ru]=Зеленый
+Name[sk]=Zelená
+Name[cs]=Zelená
+Name[sr]=Зелена
+Name[sr@latin]=Zelena
+Name[sr@ijekavian]=Зелена
+Name[sr@ijekavianlatin]=Zelena
+Icon=folder-green
+Exec=colorfolder.sh folder-green %F/.directory
+
+[Desktop Action ColorBlue]
+Name=Blue
+Name[de]=Blau
+Name[ca]=Blau
+Name[es]=Azul
+Name[pl]=Niebieski
+Name[hu]=Kék
+Name[fr]=Bleu
+Name[it]=Blu
+Name[ru]=Синий
+Name[sk]=Modrá
+Name[cs]=Modrá
+Name[sr]=Плава
+Name[sr@latin]=Plava
+Name[sr@ijekavian]=Плава
+Name[sr@ijekavianlatin]=Plava
+Icon=folder-blue
+Exec=colorfolder.sh folder-blue %F/.directory
+
+[Desktop Action ColorViolet]
+Name=Violet
+Name[de]=Violett
+Name[ca]=Violeta
+Name[es]=Violeta
+Name[pl]=Fioletowy
+Name[hu]=Lila
+Name[fr]=Violet
+Name[it]=Viola
+Name[ru]=Фиолетовый
+Name[sk]=Fialová
+Name[cs]=Fialová
+Name[sr]=Љубичаста
+Name[sr@latin]=Ljubičasta
+Name[sr@ijekavian]=Љубичаста
+Name[sr@ijekavianlatin]=Ljubičasta
+Icon=folder-violet
+Exec=colorfolder.sh folder-violet %F/.directory
+
+[Desktop Action ColorMagenta]
+Name=Magenta
+Name[de]=Magenta
+Icon=folder-magenta
+Exec=colorfolder.sh folder-magenta %F/.directory
+
+[Desktop Action ColorBrown]
+Name=Brown
+Name[de]=Braun
+Name[sr]=Смеђа
+Name[sr@latin]=Smeđa
+Name[sr@ijekavian]=Смеђа
+Name[sr@ijekavianlatin]=Smeđa
+Icon=folder-brown
+Exec=colorfolder.sh folder-brown %F/.directory
+
+[Desktop Action ColorCyan]
+Name=Cyan
+Name[de]=Cyan
+Name[ca]=Cian
+Name[es]=Cian
+Name[pl]=Błękitny
+Name[hu]=Cián
+Name[fr]=Cyan
+Name[ru]=Голубой
+Name[sk]=Modrozelená
+Name[cs]=Modrozelená
+Name[sr]=Цијан
+Name[sr@latin]=Cijan
+Name[sr@ijekavian]=Цијан
+Name[sr@ijekavianlatin]=Cijan
+Icon=folder-cyan
+Exec=colorfolder.sh folder-cyan %F/.directory
+
+[Desktop Action ColorGrey]
+Name=Grey
+Name[de]=Grau
+Name[ca]=Gris
+Name[es]=Gris
+Name[pl]=Szary
+Name[hu]=Szürke
+Name[fr]=Gris
+Name[it]=Grigio
+Name[ru]=Серый
+Name[sk]=Šedá
+Name[cs]=Šedá
+Name[sr]=Сива
+Name[sr@latin]=Siva
+Name[sr@ijekavian]=Сива
+Name[sr@ijekavianlatin]=Siva
+Icon=folder-grey
+Exec=colorfolder.sh folder-grey %F/.directory
+
+[Desktop Action ColorBlack]
+Name=Black
+Name[de]=Schwarz
+Icon=folder-black
+Exec=colorfolder.sh folder-black %F/.directory
 
 [Desktop Action RemoveColor]
 Name=Remove color
@@ -198,7 +210,7 @@ Name[sr@latin]=Ukloni boju
 Name[sr@ijekavian]=Уклони боју
 Name[sr@ijekavianlatin]=Ukloni boju
 Icon=folder
-Exec=colorfolder remove %F/.directory
+Exec=colorfolder.sh remove %F/.directory
 
 [Desktop Action RemoveDesktopFile]
 Name=Remove .directory file
@@ -218,4 +230,3 @@ Name[sr@ijekavian]=Уклони .directory фајл
 Name[sr@ijekavianlatin]=Ukloni .directory fajl
 Icon=edit-delete
 Exec=rm %F/.directory
-
