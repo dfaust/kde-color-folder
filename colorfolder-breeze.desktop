@@ -137,6 +137,7 @@ Exec=colorfolder.sh folder-violet %F/.directory
 [Desktop Action ColorMagenta]
 Name=Magenta
 Name[de]=Magenta
+Name[ru]=Пурпурный
 Icon=folder-magenta
 Exec=colorfolder.sh folder-magenta %F/.directory
 
@@ -147,6 +148,7 @@ Name[sr]=Смеђа
 Name[sr@latin]=Smeđa
 Name[sr@ijekavian]=Смеђа
 Name[sr@ijekavianlatin]=Smeđa
+Name[ru]=Коричневый
 Icon=folder-brown
 Exec=colorfolder.sh folder-brown %F/.directory
 
@@ -190,6 +192,7 @@ Exec=colorfolder.sh folder-grey %F/.directory
 [Desktop Action ColorBlack]
 Name=Black
 Name[de]=Schwarz
+Name[ru]=Черный
 Icon=folder-black
 Exec=colorfolder.sh folder-black %F/.directory
 
