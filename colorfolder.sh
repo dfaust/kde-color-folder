@@ -1,8 +1,8 @@
 #!/bin/bash
-# (c) 2006-2011 Daniel Faust - hessijames@gmail.com
+# (c) 2006-2017 Daniel Faust - hessijames@gmail.com
 # This file is published under the terms of the GPL
 #
-# v. 1.0.0
+# v. 2.0.2
 #
 # how to use:
 # remove icon from .directory file: colorfolder remove /your/directory

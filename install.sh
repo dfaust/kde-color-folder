@@ -6,7 +6,7 @@ colorfolder_sh='colorfolder.sh'
 
 combobox_kde_version=('Select your desktop version:' 'Plasma 5' 'KDE4')
 
-kde_version=$(kdialog --caption "Desktop version" --title "Color Folder" --combobox "${combobox_kde_version[@]}" --default "${combobox_kde_version[1]}")
+kde_version=$(kdialog --title "Color Folder" --combobox "${combobox_kde_version[@]}" --default "${combobox_kde_version[1]}")
 
 kde_config_services=()
 
@@ -23,7 +23,7 @@ if [ "$kde_version" == "Plasma 5" ]; then
             fi
         done
     else
-        kdialog --caption "Error" --title "Color Folder" --error "Installation failed: kf5-config not found"
+        kdialog --title "Color Folder" --error "Installation failed: kf5-config not found"
         exit 1
     fi
 elif [ "$kde_version" == "KDE4" ]; then
@@ -40,7 +40,7 @@ elif [ "$kde_version" == "KDE4" ]; then
             fi
         done
     else
-        kdialog --caption "Error" --title "Color Folder" --error "Installation failed: kde4-config not found"
+        kdialog --title "Color Folder" --error "Installation failed: kde4-config not found"
         exit 1
     fi
 else
@@ -71,6 +71,6 @@ if ! [ -z "$service_path" ]; then
         kbuildsycoca4
     fi
 else
-    kdialog --caption "Error" --title "Color Folder" --error "Installation failed: Can't find service path"
+    kdialog --title "Color Folder" --error "Installation failed: Can't find service path"
     exit 1
 fi
