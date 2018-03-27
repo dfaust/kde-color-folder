@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Service
 Encoding=UTF-8
-Version=2.0.2
+Version=2.0.3
 ServiceTypes=KonqPopupMenu/Plugin,inode/directory
 Actions=ColorRed;ColorOrange;ColorYellow;ColorGreen;ColorBlue;ColorViolet;ColorMagenta;ColorBrown;ColorCyan;ColorGrey;ColorBlack;RemoveColor;RemoveDesktopFile;
 X-KDE-Submenu=Tint

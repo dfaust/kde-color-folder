@@ -1,8 +1,8 @@
 #!/bin/bash
-# (c) 2006-2017 Daniel Faust - hessijames@gmail.com
+# (c) 2006-2018 Daniel Faust - hessijames@gmail.com
 # This file is published under the terms of the GPL
 #
-# v. 2.0.2
+# v. 2.0.3
 #
 # how to use:
 # remove icon from .directory file: colorfolder remove /your/directory
@@ -67,10 +67,19 @@ for SPLINTER in $@; do
           if [ "$FIND" != "" ]
             then
               sed "s/#*Icon=.*/Icon=$1/g" "$FILE" > "/tmp/$$" && mv "/tmp/$$" "$FILE"
-              log "$FILE modified! (replaced)"
+              log "$FILE modified! (replaced icon)"
             else
+              FIND=`grep -e "\[Desktop Entry\]" "$FILE"`
+              if [ "$FIND" != "" ]
+                then
+                  sed "s/#*\[Desktop Entry\]/\[Desktop Entry\]\nIcon=$1/g" "$FILE" > "/tmp/$$" && mv "/tmp/$$" "$FILE"
+                  log "$FILE modified! (added icon)"
+            else
+                  echo >> "$FILE"
+                  echo "[Desktop Entry]" >> "$FILE"
               echo "Icon=$1" >> "$FILE"
-              log "$FILE modified! (added)"
+                  log "$FILE modified! (added section + icon)"
+              fi
           fi
       fi
     else
