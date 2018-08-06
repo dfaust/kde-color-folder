@@ -2,7 +2,7 @@
 # (c) 2006-2018 Daniel Faust - hessijames@gmail.com
 # This file is published under the terms of the GPL
 #
-# v. 2.0.3
+# v. 2.1.0
 #
 # how to use:
 # remove icon from .directory file: colorfolder remove /your/directory

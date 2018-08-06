@@ -1,7 +1,7 @@
 #!/bin/bash
 
-colorfolder_desktop='colorfolder.desktop'
-colorfolder_sh='colorfolder.sh'
+desktop_file='colorfolder.desktop'
+script_file='colorfolder.sh'
 
 if [ `which kde4-config` ]; then
     kde_config_services=`kde4-config --path services`
@@ -9,17 +9,17 @@ if [ `which kde4-config` ]; then
     IFS=":"
 
     for p in $kde_config_services; do
-        colorfolder_desktop_path="$p/ServiceMenus/$colorfolder_desktop"
-        colorfolder_sh_path="$p/ServiceMenus/$colorfolder_sh"
+        desktop_file_path="$p/ServiceMenus/$desktop_file"
+        script_file_path="$p/ServiceMenus/$script_file"
 
-        if [ -f "$colorfolder_desktop_path" ]; then
-            echo "removing file: $colorfolder_desktop_path"
-            rm "$colorfolder_desktop_path"
+        if [ -f "$desktop_file_path" ]; then
+            echo "removing file: $desktop_file_path"
+            rm "$desktop_file_path"
         fi
 
-        if [ -f "$colorfolder_sh_path" ]; then
-            echo "removing file: $colorfolder_sh_path"
-            rm "$colorfolder_sh_path"
+        if [ -f "$script_file_path" ]; then
+            echo "removing file: $script_file_path"
+            rm "$script_file_path"
         fi
     done
 
@@ -42,17 +42,17 @@ if [ `which kf5-config` ]; then
     IFS=":"
 
     for p in $kde_config_services; do
-        colorfolder_desktop_path="$p/$colorfolder_desktop"
-        colorfolder_sh_path="$p/$colorfolder_sh"
+        desktop_file_path="$p/$desktop_file"
+        script_file_path="$p/$script_file"
 
-        if [ -f "$colorfolder_desktop_path" ]; then
-            echo "removing file: $colorfolder_desktop_path"
-            rm "$colorfolder_desktop_path"
+        if [ -f "$desktop_file_path" ]; then
+            echo "removing file: $desktop_file_path"
+            rm "$desktop_file_path"
         fi
 
-        if [ -f "$colorfolder_sh_path" ]; then
-            echo "removing file: $colorfolder_sh_path"
-            rm "$colorfolder_sh_path"
+        if [ -f "$script_file_path" ]; then
+            echo "removing file: $script_file_path"
+            rm "$script_file_path"
         fi
     done
 fi
