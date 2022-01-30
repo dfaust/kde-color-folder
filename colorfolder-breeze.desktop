@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Service
 Encoding=UTF-8
-Version=2.0.3
+Version=2.2.0
 ServiceTypes=KonqPopupMenu/Plugin,inode/directory
 Actions=ColorRed;ColorOrange;ColorYellow;ColorGreen;ColorBlue;ColorViolet;ColorMagenta;ColorBrown;ColorCyan;ColorGrey;ColorBlack;RemoveColor;RemoveDesktopFile;
 X-KDE-Submenu=Tint
@@ -37,7 +37,7 @@ Name[sr@latin]=Crvena
 Name[sr@ijekavian]=Црвена
 Name[sr@ijekavianlatin]=Crvena
 Icon=folder-red
-Exec=colorfolder.sh folder-red %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-red "$f/.directory"; done
 
 [Desktop Action ColorOrange]
 Name=Orange
@@ -56,7 +56,7 @@ Name[sr@latin]=Narandžasta
 Name[sr@ijekavian]=Наранџаста
 Name[sr@ijekavianlatin]=Narandžasta
 Icon=folder-orange
-Exec=colorfolder.sh folder-orange %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-orange "$f/.directory"; done
 
 [Desktop Action ColorYellow]
 Name=Yellow
@@ -75,7 +75,7 @@ Name[sr@latin]=Žuta
 Name[sr@ijekavian]=Жута
 Name[sr@ijekavianlatin]=Žuta
 Icon=folder-yellow
-Exec=colorfolder.sh folder-yellow %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-yellow "$f/.directory"; done
 
 [Desktop Action ColorGreen]
 Name=Green
@@ -94,7 +94,7 @@ Name[sr@latin]=Zelena
 Name[sr@ijekavian]=Зелена
 Name[sr@ijekavianlatin]=Zelena
 Icon=folder-green
-Exec=colorfolder.sh folder-green %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-green "$f/.directory"; done
 
 [Desktop Action ColorBlue]
 Name=Blue
@@ -113,7 +113,7 @@ Name[sr@latin]=Plava
 Name[sr@ijekavian]=Плава
 Name[sr@ijekavianlatin]=Plava
 Icon=folder-blue
-Exec=colorfolder.sh folder-blue %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-blue "$f/.directory"; done
 
 [Desktop Action ColorViolet]
 Name=Violet
@@ -132,14 +132,14 @@ Name[sr@latin]=Ljubičasta
 Name[sr@ijekavian]=Љубичаста
 Name[sr@ijekavianlatin]=Ljubičasta
 Icon=folder-violet
-Exec=colorfolder.sh folder-violet %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-violet "$f/.directory"; done
 
 [Desktop Action ColorMagenta]
 Name=Magenta
 Name[de]=Magenta
 Name[ru]=Пурпурный
 Icon=folder-magenta
-Exec=colorfolder.sh folder-magenta %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-magenta "$f/.directory"; done
 
 [Desktop Action ColorBrown]
 Name=Brown
@@ -150,7 +150,7 @@ Name[sr@ijekavian]=Смеђа
 Name[sr@ijekavianlatin]=Smeđa
 Name[ru]=Коричневый
 Icon=folder-brown
-Exec=colorfolder.sh folder-brown %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-brown "$f/.directory"; done
 
 [Desktop Action ColorCyan]
 Name=Cyan
@@ -168,7 +168,7 @@ Name[sr@latin]=Cijan
 Name[sr@ijekavian]=Цијан
 Name[sr@ijekavianlatin]=Cijan
 Icon=folder-cyan
-Exec=colorfolder.sh folder-cyan %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-cyan "$f/.directory"; done
 
 [Desktop Action ColorGrey]
 Name=Grey
@@ -187,14 +187,14 @@ Name[sr@latin]=Siva
 Name[sr@ijekavian]=Сива
 Name[sr@ijekavianlatin]=Siva
 Icon=folder-grey
-Exec=colorfolder.sh folder-grey %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-grey "$f/.directory"; done
 
 [Desktop Action ColorBlack]
 Name=Black
 Name[de]=Schwarz
 Name[ru]=Черный
 Icon=folder-black
-Exec=colorfolder.sh folder-black %F/.directory
+Exec=for f in %F; do colorfolder.sh folder-black "$f/.directory"; done
 
 [Desktop Action RemoveColor]
 Name=Remove color
@@ -213,7 +213,7 @@ Name[sr@latin]=Ukloni boju
 Name[sr@ijekavian]=Уклони боју
 Name[sr@ijekavianlatin]=Ukloni boju
 Icon=folder
-Exec=colorfolder.sh remove %F/.directory
+Exec=for f in %F; do colorfolder.sh remove "$f/.directory"; done
 
 [Desktop Action RemoveDesktopFile]
 Name=Remove .directory file
@@ -232,4 +232,4 @@ Name[sr@latin]=Ukloni .directory fajl
 Name[sr@ijekavian]=Уклони .directory фајл
 Name[sr@ijekavianlatin]=Ukloni .directory fajl
 Icon=edit-delete
-Exec=rm %F/.directory
+Exec=for f in %F; do rm "$f/.directory"; done

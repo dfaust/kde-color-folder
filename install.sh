@@ -33,8 +33,8 @@ if ! [ -z "$service_path" ]; then
     cp "./$desktop_file_src" "$service_path/$desktop_file"
     cp "./$script_file" "$service_path/$script_file"
 
-    search="Exec=$script_file"
-    replace="Exec=$service_path/$script_file"
+    search="$script_file"
+    replace="$service_path/$script_file"
     replace=${replace//\//\\/}
     sed -i "s/$search/$replace/" "$service_path/$desktop_file"
 
